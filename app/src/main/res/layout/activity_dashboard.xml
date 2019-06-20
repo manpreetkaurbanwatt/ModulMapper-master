@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard">
+
+     <ImageView
+         android:id="@+id/logosplash"
+         android:layout_width="320dp"
+         android:layout_height="209dp"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="200dp"
+         android:scaleType="fitXY"
+         android:src="@drawable/wintec"
+         android:background="@drawable/background"
+         />
+     
+    <!-- <LinearLayout
+         android:id="@+id/toolbarLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+          
+          <android.support.v7.widget.Toolbar
+              android:id="@+id/toolbar"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPrimary">
+               <ImageView
+                   android:id="@+id/toolbarImage"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="65dp"
+                   android:src="@drawable/wintec_logo_white"
+                   />
+
+          </android.support.v7.widget.Toolbar>
+
+     </LinearLayout>-->
+
+     <LinearLayout
+         android:id="@+id/menuitems"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_marginTop="30dp"
+         android:layout_marginBottom="0dp"
+         android:elevation="6dp"
+         android:orientation="vertical">
+
+          //first menu row
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="63dp"
+              android:layout_marginBottom="10dp"
+              android:orientation="horizontal"
+              android:gravity="center">
+
+               //first menu item
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginRight="30dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/bg_software"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="13dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/software" />
+
+
+                    <Button
+                        android:id="@+id/btn_software"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Transparent"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Software Development"/>
+
+
+               </LinearLayout>
+               //Second Menu Item
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="50dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/bg_web"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/web_development" />
+
+
+                    <Button
+                        android:id="@+id/btn_web"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Transparent"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Web Development"/>
+
+
+               </LinearLayout>
+          </LinearLayout>
+
+          //Second menu row
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="63dp"
+              android:layout_marginBottom="10dp"
+              android:orientation="horizontal">
+
+               //first menu item
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="30dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/bg_networking"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/networking" />
+
+                   <Button
+                       android:id="@+id/btn_networking"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@color/Transparent"
+                       android:textColor="@color/colorWhite"
+                       android:textSize="12sp"
+                       android:gravity="center"
+                       android:textStyle="bold"
+                       android:text="Networking" />
+
+
+               </LinearLayout>
+               //Second Menu Item
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="50dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/bg_database"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/database" />
+
+                    <Button
+                        android:id="@+id/btn_database"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/Transparent"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Database Development"/>
+
+               </LinearLayout>
+          </LinearLayout>
+
+     </LinearLayout>
+
+</RelativeLayout>
